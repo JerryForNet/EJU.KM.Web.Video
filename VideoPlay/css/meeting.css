@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{ margin:0px; padding:0px; font-family:"Microsoft YaHei"; color:#666; font-size:14px; background:url(../image/bg.png) #ca2f2f no-repeat center top; }
+ul{ margin:0px; padding:0px;}
+ul,li{ margin:0px; padding:0px; list-style:none; display:block}
+h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
+span{ display:block}
+i,em{ display:block; font-style:normal}
+.clr{ clear:both}
+a{ text-decoration:none; display:block; color:#666}
+.logo{width:877px; height:58px; margin:0 auto; background:url(../image/logo.png  ) no-repeat; margin-top:20px;  }
+.main{ width:877px; margin:0 auto; margin-top:20px;}
+.main_t{ background:url(../image/box_t.png) no-repeat top; height:66px;}
+.main_b{ background:url(../image/box_b.png) no-repeat bottom;height:30px;}
+.main_mid{ background: url(../image/box_r.png) repeat-y; height:437px;  }
+.main_body{ width:846px; margin: 0 auto;  }
+.left_tit{ width:239px; height:29px; line-height:29px; float:left; margin: 28px 0 0 25px ; text-align:center; font-weight:bold}
+.right_tit{ width:514px; height:29px; line-height:29px; float:left;  margin: 28px 0 0 25px ; color:#666666;  }
+.play_now{  float:left; margin-left:10px;}
+.return{ float:right; margin-right:10px;}
+.return a{ display:block; background:url(../image/arrow.png) no-repeat left ; padding-left:15px; line-height:30px;}
+.video_list{ margin-left:10px; width:229px;  line-height:20px; padding:5px; float:left; height:430px;} 
+.video_list li{width:215px; height:46px;  padding:5px; margin-bottom:5px;vertical-align: bottom}
+.video_list li.on{background:#FFF;}
+.video_list .pic{ display:block; float:left ; width:72px; height:46px;  margin:0  5px 0 0;}
+.video_list i{ margin-top:2px;float:left; width:190px;}
+.video_list em{ float:left; width:190px;color:#999999}
+.video_play{ width:566px; float:right; margin-right:9px;  }
+.video{ width:556px; height:384px; margin:7px  auto 5px  auto ;}
+.video_play .sep{ background:url(../image/sep.png); height:14px; clear:both}
+.video .video_info{width:556px; line-height:25px;height:25px; float:left; }
+.meeting_time{ width:180px; line-height:25px; float:left; margin-left:10px; padding-left:18px; background:url(../image/time.png) no-repeat left center }
+.meeting_topic{line-height:25px;width:270px;float:left;margin-left:10px;padding-left:18px; background:url(../image/topic.png) no-repeat left center}

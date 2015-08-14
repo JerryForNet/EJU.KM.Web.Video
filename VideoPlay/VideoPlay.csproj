@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41A34F32-1555-4C4C-A511-A19D75BE6C44}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VideoPlay</RootNamespace>
+    <AssemblyName>VideoPlay</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asd.jpg" />
+    <Content Include="assets\buffer.png" />
+    <Content Include="assets\error.png" />
+    <Content Include="assets\flash.png" />
+    <Content Include="assets\html5.png" />
+    <Content Include="assets\jwplayer.flash.swf" />
+    <Content Include="assets\jwplayer.html5.js" />
+    <Content Include="assets\jwplayer.js" />
+    <Content Include="css\jquery-ui-1.10.3.custom.css" />
+    <Content Include="css\meeting.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="image\20140807092436350.jpg" />
+    <Content Include="image\arrow.png" />
+    <Content Include="image\asd.jpg" />
+    <Content Include="image\bck.jpg" />
+    <Content Include="image\bg.png" />
+    <Content Include="image\bj3.jpg" />
+    <Content Include="image\box_b.png" />
+    <Content Include="image\box_r.png" />
+    <Content Include="image\box_t.png" />
+    <Content Include="image\btn_res.jpg" />
+    <Content Include="image\btn_save.jpg" />
+    <Content Include="image\cvb.jpg" />
+    <Content Include="image\dfg.jpg" />
+    <Content Include="image\eju.png" />
+    <Content Include="image\findallvideo.jpg" />
+    <Content Include="image\lg.jpg" />
+    <Content Include="image\login.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\pic_1.jpg" />
+    <Content Include="image\pic_2.jpg" />
+    <Content Include="image\qaz.jpg" />
+    <Content Include="image\qwe.jpg" />
+    <Content Include="image\sep.png" />
+    <Content Include="image\time.png" />
+    <Content Include="image\topic.png" />
+    <Content Include="image\zxc.jpg" />
+    <Content Include="image\默认.jpg" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="jwplayer.html5.js" />
+    <Content Include="jwpsrv.js" />
+    <Content Include="jwpsrv_frq.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="js\jwplayer.js" />
+    <Content Include="jwplayer.js" />
+    <Content Include="META-INF\maven\org.red5\oflaDemo\pom.xml" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="play.bak.html" />
+    <Content Include="player.swf" />
+    <None Include="My97DatePicker\WdatePicker.js.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="skinning-sdk\skin_five\.DS_Store" />
+    <None Include="skinning-sdk\skin_five\controlbar\.DS_Store" />
+    <None Include="skinning-sdk\skin_five\display\.DS_Store" />
+    <None Include="skinning-sdk\skin_five\dock\.DS_Store" />
+    <Content Include="skinning-sdk\skin_five\five.zip" />
+    <None Include="skinning-sdk\skin_five\playlist\.DS_Store" />
+    <None Include="skinning-sdk\skin_five\tooltip\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\controlbar\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\display\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\dock\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\playlist\.DS_Store" />
+    <None Include="skinning-sdk\skin_red\tooltip\.DS_Store" />
+    <None Include="Web References\EJUWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EJUWebService\ucwebservice.disco" />
+    <Content Include="skinning-sdk\skin_five\controlbar\background.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\cap.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\ccButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\ccButtonOff.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\ccButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\fullscreenButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\fullscreenButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\hdButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\hdButtonOff.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\hdButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\muteButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\muteButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\nextButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\nextButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\normalscreenButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\normalscreenButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\pauseButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\pauseButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\playButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\playButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\prevButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\prevButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\spacer.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderBuffer.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderCap.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderCue.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderProgress.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderProgressCapRight.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\timeSliderRail.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\unmuteButton.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\unmuteButtonOver.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\volumeProgress.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\volumeProgressCapRight.png" />
+    <Content Include="skinning-sdk\skin_five\controlbar\volumeRail.png" />
+    <Content Include="skinning-sdk\skin_five\display\background.png" />
+    <Content Include="skinning-sdk\skin_five\display\backgroundOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\bufferIcon.png" />
+    <Content Include="skinning-sdk\skin_five\display\bufferIconOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\capLeft.png" />
+    <Content Include="skinning-sdk\skin_five\display\capLeftOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\capRight.png" />
+    <Content Include="skinning-sdk\skin_five\display\capRightOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\errorIcon.png" />
+    <Content Include="skinning-sdk\skin_five\display\errorIconOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\playIcon.png" />
+    <Content Include="skinning-sdk\skin_five\display\playIconOver.png" />
+    <Content Include="skinning-sdk\skin_five\display\replayIcon.png" />
+    <Content Include="skinning-sdk\skin_five\display\replayIconOver.png" />
+    <Content Include="skinning-sdk\skin_five\dock\button.png" />
+    <Content Include="skinning-sdk\skin_five\dock\buttonOver.png" />
+    <Content Include="skinning-sdk\skin_five\dock\divider.png" />
+    <Content Include="skinning-sdk\skin_five\five.xml" />
+    <Content Include="skinning-sdk\skin_five\playlist\divider.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\item.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\itemActive.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\itemImage.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\sliderCap.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\sliderRail.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\sliderRailCapBottom.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\sliderRailCapTop.png" />
+    <Content Include="skinning-sdk\skin_five\playlist\sliderThumb.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\arrow.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\background.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capBottom.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capBottomLeft.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capBottomRight.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capLeft.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capRight.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capTop.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capTopLeft.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\capTopRight.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\menuOption.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\menuOptionOver.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\volumeCap.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\volumeProgress.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\volumeProgressCapTop.png" />
+    <Content Include="skinning-sdk\skin_five\tooltip\volumeRail.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\background.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\capLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\capRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\ccButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\ccButtonOff.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\fullscreenButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\fullscreenButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\hdButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\hdButtonOff.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\muteButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\muteButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\nextButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\nextButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\normalscreenButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\normalscreenButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\pauseButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\pauseButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\playButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\playButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\prevButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\prevButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\spacer.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderBuffer.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderBufferCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderBufferCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderCap.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderCue.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderProgress.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderProgressCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderProgressCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderRail.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderRailCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderRailCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\timeSliderThumb.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\unmuteButton.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\unmuteButtonOver.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeProgress.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeProgressCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeProgressCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeRail.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeRailCapLeft.png" />
+    <Content Include="skinning-sdk\skin_red\controlbar\volumeRailCapRight.png" />
+    <Content Include="skinning-sdk\skin_red\display\background.png" />
+    <Content Include="skinning-sdk\skin_red\display\backgroundOver.png" />
+    <Content Include="skinning-sdk\skin_red\display\bufferIcon.png" />
+    <Content Include="skinning-sdk\skin_red\display\capLeft.png" />
+    <Content Include="skinning-sdk\skin_red\display\capLeftOver.png" />
+    <Content Include="skinning-sdk\skin_red\display\capRight.png" />
+    <Content Include="skinning-sdk\skin_red\display\capRightOver.png" />
+    <Content Include="skinning-sdk\skin_red\display\errorIcon.png" />
+    <Content Include="skinning-sdk\skin_red\display\playIcon.png" />
+    <Content Include="skinning-sdk\skin_red\display\playIconOver.png" />
+    <Content Include="skinning-sdk\skin_red\display\replayIcon.png" />
+    <Content Include="skinning-sdk\skin_red\display\replayIconOver.png" />
+    <Content Include="skinning-sdk\skin_red\dock\button.png" />
+    <Content Include="skinning-sdk\skin_red\dock\buttonActive.png" />
+    <Content Include="skinning-sdk\skin_red\dock\buttonOver.png" />
+    <Content Include="skinning-sdk\skin_red\dock\divider.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\divider.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\item.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\itemActive.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\itemImage.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderCap.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderRail.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderRailCapBottom.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderRailCapTop.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderThumb.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderThumbCapBottom.png" />
+    <Content Include="skinning-sdk\skin_red\playlist\sliderThumbCapTop.png" />
+    <Content Include="skinning-sdk\skin_red\red.xml" />
+    <Content Include="skinning-sdk\skin_red\tooltip\arrow.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\background.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capBottom.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capBottomLeft.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capBottomRight.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capLeft.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capRight.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capTop.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capTopLeft.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\capTopRight.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\menuOption.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\menuOptionActive.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\menuOptionOver.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeCap.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeProgress.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeProgressCapBottom.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeProgressCapTop.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeRail.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeRailCapBottom.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeRailCapTop.png" />
+    <Content Include="skinning-sdk\skin_red\tooltip\volumeThumb.png" />
+    <Content Include="skins\beelden.xml" />
+    <Content Include="skins\bekle.xml" />
+    <Content Include="skins\blue.xml" />
+    <Content Include="skins\five.xml" />
+    <Content Include="skins\glow.xml" />
+    <Content Include="skins\green.xml" />
+    <Content Include="skins\modieus.xml" />
+    <Content Include="skins\red.xml" />
+    <Content Include="skins\roundster.xml" />
+    <Content Include="skins\six.xml" />
+    <Content Include="skins\stormtrooper.xml" />
+    <Content Include="skins\vapor.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="check_login.aspx" />
+    <Content Include="ShowAllVideo.aspx" />
+    <Content Include="AddLiveVideo.aspx" />
+    <Content Include="UpdateLiveVideo.aspx" />
+    <Content Include="DeleteVideo.aspx" />
+    <Content Include="updateVideo.aspx" />
+    <Content Include="SaveUpdateVideoInfo.aspx" />
+    <Content Include="AddVideo.aspx" />
+    <Content Include="SaveAddVideoInfo.aspx" />
+    <Content Include="WatchVideo.aspx" />
+    <Content Include="ReturnBack.aspx" />
+    <None Include="Web References\EJUWebService\ucwebservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="check_login.aspx.cs">
+      <DependentUpon>check_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="check_login.aspx.designer.cs">
+      <DependentUpon>check_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllVideo.aspx.cs">
+      <DependentUpon>ShowAllVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAllVideo.aspx.designer.cs">
+      <DependentUpon>ShowAllVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddLiveVideo.aspx.cs">
+      <DependentUpon>AddLiveVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLiveVideo.aspx.designer.cs">
+      <DependentUpon>AddLiveVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransForm.cs" />
+    <Compile Include="UpdateLiveVideo.aspx.cs">
+      <DependentUpon>UpdateLiveVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateLiveVideo.aspx.designer.cs">
+      <DependentUpon>UpdateLiveVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteVideo.aspx.cs">
+      <DependentUpon>DeleteVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteVideo.aspx.designer.cs">
+      <DependentUpon>DeleteVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateVideo.aspx.cs">
+      <DependentUpon>updateVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateVideo.aspx.designer.cs">
+      <DependentUpon>updateVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveUpdateVideoInfo.aspx.cs">
+      <DependentUpon>SaveUpdateVideoInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SaveUpdateVideoInfo.aspx.designer.cs">
+      <DependentUpon>SaveUpdateVideoInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVideo.aspx.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVideo.aspx.designer.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveAddVideoInfo.aspx.cs">
+      <DependentUpon>SaveAddVideoInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SaveAddVideoInfo.aspx.designer.cs">
+      <DependentUpon>SaveAddVideoInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WatchVideo.aspx.cs">
+      <DependentUpon>WatchVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WatchVideo.aspx.designer.cs">
+      <DependentUpon>WatchVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBack.aspx.cs">
+      <DependentUpon>ReturnBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnBack.aspx.designer.cs">
+      <DependentUpon>ReturnBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EJUWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1F00EC1F-41FA-4CEB-86B2-001863A86EA6}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{B3D669AD-ECAD-4B9F-8967-7CC73D62BB57}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler1.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="META-INF\MANIFEST.MF" />
+    <None Include="META-INF\maven\org.red5\oflaDemo\pom.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="persistence\" />
+    <Folder Include="skinning-sdk\skin_blue\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://in.eju.com/ucwebservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EJUWebService\</RelPath>
+      <UpdateFromURL>http://in.eju.com/ucwebservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VideoPlay_EJUWebService_UCWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6210</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38725/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

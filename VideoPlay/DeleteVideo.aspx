@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DeleteVideo.aspx.cs" Inherits="VideoPlay.DeleteVideo" %>
